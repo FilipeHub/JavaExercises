@@ -14,8 +14,8 @@ public class DivisibleChallengeTest {
 
     @Test
     void itShouldReturnEmptyMessage() {
-        String emptyMessage = "";
-        assertThat(DivisibleChallenge.customMessageForDivisibleNumber(1, 0)).isEqualTo(emptyMessage);
+        String warningMessage = "Please put a end point greater than the start point";
+        assertThat(DivisibleChallenge.customMessageForDivisibleNumber(1, 0)).isEqualTo(warningMessage);
     }
 
     @Test

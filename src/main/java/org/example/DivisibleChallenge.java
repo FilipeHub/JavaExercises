@@ -13,7 +13,7 @@ public class DivisibleChallenge {
     private static final String SEPARATOR = "\n";
 
     public static String customMessageForDivisibleNumber(int start, int end){
-        if(start > end) return "";
+        if(start > end) return "Please put a end point greater than the start point";
 
         StringBuilder stringBuilder = new StringBuilder();
 
@@ -28,7 +28,7 @@ public class DivisibleChallenge {
             stringBuilder.append(currentValue + SEPARATOR);
         }
 
-        return stringBuilder.toString().substring(0, stringBuilder.toString().length() - 1);
+        return stringBuilder.substring(0, stringBuilder.toString().length() - 1);
     }
 
     public static void main(String[] args) {
